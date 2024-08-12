@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Anthony</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Start</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">About Me</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <h1>Anthony Aldunate</h1>
+            <h2>Systems Engineer - Fullstack jr</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/anthony.aldunate/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/anthony-gabriel-aldunate-justiniano-46b597299/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>Hi!, Anthony Aldunate</span> A responsible person with a great desire to learn and provide solutions to problems related to computing and systems</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Data</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            22-04-1998
+                        </li>
+                        <li>
+                            <strong>Phone</strong>
+                            +591 79487389
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            aldunatejustinianoanthonygabri@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Address</strong>
+                            AV.MUTUALISTA C/4 2205, Bolivia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Games</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>                        
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>SPORT</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Development</span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <a href="img/CV_E.pdf" download>
+                <button>
+                    Download CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQLServer</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MongoDB</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Systems Engineer</h4>
+                        <span class="casa">Universidad Privada Domingo Savio</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>Comprehensive training in analysis, design and optimization of computer systems, Focus on the development of information technologies, with principles of quality, security and continuous improvement. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diploma course in artificial intelligence</h4>
+                        <span class="casa">Universidad Privada Franz Tamayo</span>
+                        <span class="fecha">2024 - Present</span>
+                        <p>Provide participants with the knowledge, skills and experience in developing projects with Artificial Intelligence at the research level, with a focus on solving aspects of the current situation.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Web Developer</h4>
+                        <span class="casa">Ise integrados Srl</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>Technical and functional support in sales, Development and improvement of the incident, system module with ASP.NET, GitHub Management </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4> IT Analyst and Data Center Administrator</h4>
+                        <span class="casa">Imcruz Sa</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Manage and optimize the company's IT infrastructure, ensuring maximum efficiency and availability of the Data Center, Use advanced IT security knowledge to protect data center infrastructure, Design and manage data backup and recovery strategies to minimize the risk of information loss and ensure operational continuity.</p>
+                        <p>Management and configuration of servers, storage, and networks within the data center, Security and Compliance: Implementation of security policies and procedures to protect data and ensure compliance with current regulations, Capacity assessment and planning to ensure that infrastructure can support current and future needs                            Developing and managing backup and recovery strategies to minimize the risk of data loss. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>IT Analyst </h4>
+                        <span class="casa">Get Server SRL</span>
+                        <span class="fecha">2024 - March 2024</span>
+                        <p>Manage and optimize the company's IT infrastructure, ensuring maximum efficiency and availability of the Data Center, Use advanced IT security knowledge to protect data center infrastructure, Design and manage data backup and recovery strategies to minimize the risk of information loss and ensure operational continuity</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto" onclick="openModal('img/TYCKET.jpg', 'https://github.com/max9607/WebApplication4')">
+                    <img src="img/TYCKET.jpg" alt="">
+                    <div class="overlay">
+                        <h3>IT incident web system</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="openModal('img/sis.jpg', 'https://example.com/proyecto2')">
+                    <img src="img/Sis.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="openModal('img/Python.jpg', 'https://github.com/max9607/Python')">
+                    <img src="img/Python.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <!-- Repite las demás imágenes -->
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" src="">
+            <a id="modal-link" href="#" target="_blank">GitHub TO Proyect</a>
+            <li><a  onclick="closeModal()">Close</a></li>
+        </div>
+    </div>
+
+    <!-- SECCION CONTACTO -->
+   
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/anthony.aldunate/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/anthony-gabriel-aldunate-justiniano-46b597299/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
